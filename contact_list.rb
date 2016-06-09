@@ -12,7 +12,8 @@ class ContactList
       puts "new - Create a new contact"
       puts "list - List all contacts"
       puts "show - Show a contact"
-      puts "search - Search contact"     
+      puts "search - Search contact" 
+      puts "update - update the record"    
     end  
 
     if ARGV[0] == "list"
@@ -30,6 +31,8 @@ class ContactList
       puts Contact.create(name,email)
 
     end
+
+
 
     if ARGV[0] == "show"
         id = ARGV[1].to_i
